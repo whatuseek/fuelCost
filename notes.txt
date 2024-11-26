@@ -1,0 +1,33 @@
+customize:
+As per Tailwind DOC!
+ on tailwind.config.js
+
+ 1. main .css
+ we made reusable common classes
+ .form-input{
+    @apply px-3 py-2 outline-none rounded-md mt-1 w-full  ;
+}
+
+.form-label{
+    @apply text-sm font-medium mt-1 
+    text-gray-400 sm:text-black
+    ;
+}
+
+
+
+2. tailwind.config.js
+  on extend:{below object is included here}
+    colors: {
+        "color_1a": "#798A73",
+        "color_1b": "#E0DAC9",
+        "color_1c": "#3F403C",
+
+        "color_2a": "#B6D4C5",
+        "color_2b": "#58554E",
+        "color_2c": "#F7F0E5",
+        
+        "color_3a": "#CBCBCA",
+        "color_3b": "#768EAB",
+        "color_3c": "#A285A6",            
+      },

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-input{
+    @apply px-3 py-2 outline-none rounded-md mt-1 w-full  ;
+}
+
+.form-label{
+    @apply text-sm font-medium mt-1 
+    text-gray-400 sm:text-black
+    ;
+}

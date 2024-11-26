@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>CNG</title>
+</head>
+<!-- bg-[#B6D4C5] text-[#F7F0E5]  bg-[#58554E] bg-color_2a-->
+
+<body class="bg-gradient-to-tr from-color_3b via-color_3a to-color_3c min-h-screen ">
+
+  <div class="bg-gray-800 text-white sm:bg-gray-300 sm:text-black
+          p-10 mx-auto max-w-lg mt-10
+      rounded-2xl shadow-2xl sm:shadow-xl">
+    <div>
+      <h1>Welcome_ <span class="" id="guest-name" title=""></span>,</h1>
+      <h3 class="font-bold">CNG_Calc</h3>
+      <!-- <desc class="text-gray-400 ">
+        A simple calculator for CNG fuel efficiency.
+      </desc> -->
+    </div>
+
+    <form class="mt-4 space-y-3 ">
+      <!-- form-input, form-label these are customized
+          Tailwind_css by us in ./assets/css/main.css -->
+
+      <div>
+        <label for="trip_distanceKM" class="form-label">
+          Trip distance (km) <span class="text-rose-600">*</span>
+          <input name="" id="trip_distanceKM" type="number" value="" placeholder="Trip distance" class="form-input"
+            required>
+        </label>
+      </div>
+
+      <!-- fuel efficiency -->
+      <div>
+        <label for="fuel-efficiency" class="form-label">
+          Vehicle's fuel efficiency (km/L)
+          <span class="text-rose-600">*</span>
+
+          <input name="" id="fuel-efficiency" type="number" placeholder="Fuel efficiency (km/L)" class="form-input"
+            value="" required>
+        </label>
+      </div>
+
+
+      <!-- <div>
+        <label for="fuel-economy" class="form-label">Fuel-economy (L/100km)
+          <span class="text-rose-600">*</span>
+          <input name="" id="fuel-economy" type="number" value= "1" readonly placeholder="Fuel economy (L/100km)" class="form-input"
+            required>
+        </label>
+      </div> -->
+
+      <div>
+        <label for="fuel_price" class="form-label">Fuel price ($/L) <span class="text-rose-600">*</span>
+          <input name="" id="fuel_price" type="number" placeholder="Fuel price ($/L)" value="" class="form-input"
+            required>
+        </label>
+      </div>
+
+      <div class="animate-bounce">
+        <label for="result" class="form-label">
+          <span id="result" class="text-green-600 font-bold animate-"></span>
+        </label>
+      </div>
+
+
+
+      <!-- <div>
+        <label for="fuel-efficiency" class="form-label">
+          Fuel efficiency (km/L)
+        </label>
+        <input name="" id="fuel-efficiency" type="text" placeholder="Fuel efficiency (km/L)" readonly class="form-input">
+      </div>
+
+      
+      <div>
+        <label for="fuel-cost" class="form-label">
+          Fuel cost ($)
+        </label>
+        <input name="" id="fuel-cost" type="text" placeholder="Fuel cost ($)" readonly class="form-input">
+      </div>-->
+
+      <div class="flex  justify-between">
+        <button id="calculate_btn" title="calculate"
+          class="px-4 py-2  bg-gradient-to-tr text-white rounded-md  hover:bg-gradient-to-br animate-"
+          onclick="">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            width="32" height="32" viewBox="0 0 24 24" class="text-black">
+            <g fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3.464 20.536C4.93 22 7.286 22 12 22s7.071 0 8.535-1.465C22 19.072 22 16.714 22 12s0-7.071-1.465-8.536C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464C2 4.93 2 7.286 2 12s0 7.071 1.464 8.535Z"/><path stroke-linecap="round" d="M18 8.5h-4m4 6h-4m4 3h-4m-4-9H8m0 0H6m2 0v-2m0 2v2m1.5 4L8 16m0 0l-1.5 1.5M8 16l-1.5-1.5M8 16l1.5 1.5" opacity=".5"/></g></svg>
+        </button>
+
+        <button id="reset_btn" title="Reset"
+          class="px-4 py-2  bg-gradient-to-tr text-white rounded-md  hover:bg-gradient-to-br animate-pulse"
+          onclick="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" class="text-black">
+            <path fill="currentColor"
+              d="M13.634 6.634a1.25 1.25 0 0 0-1.768-1.768l-7.5 7.5a1.25 1.25 0 0 0 0 1.768l7.5 7.5a1.25 1.25 0 0 0 1.768-1.768L8.268 14.5H26.5c7.18 0 13 5.82 13 13s-5.82 13-13 13s-13-5.82-13-13a1.25 1.25 0 1 0-2.5 0C11 36.06 17.94 43 26.5 43S42 36.06 42 27.5S35.06 12 26.5 12H8.268z" />
+          </svg>
+        </button>
+      </div>
+      <!-- reset -->
+      <div class="flex  justify-start">
+
+      </div>
+
+    </form>
+
+  </div>
+  <script type='module' src="./assets/JS/main.js"></script>
+</body>
+
+</html>
